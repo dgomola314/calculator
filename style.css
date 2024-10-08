@@ -1,0 +1,132 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Arial", "Helvetica", sans-serif;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #eee;
+}
+
+.calculator {
+    width: 287px;
+}
+
+.display {
+    height: 80px;
+    display: flex;
+    overflow-x: auto;
+    align-items: center;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    padding: 20px;
+    background-color: #717171;
+    color: #fff;
+    font-size: 20px;
+}
+
+.main {
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+    padding: 20px 10px;
+    background-color: #233;
+    display: flex;
+    align-items: center;
+}
+
+.numbers {
+    max-width: 180px;
+    display: flex;
+    gap: 4px;
+    flex-wrap: wrap;
+    margin-right: -18px;
+}
+
+.number,
+.decimal,
+.operator,
+.clear-button {
+    border: none;
+    border-radius: 3px;
+    width: 50px;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+}
+
+.number,
+.decimal {
+    background-color: #717171;
+    color: #fff;
+    font-weight: bold;
+}
+
+.number:hover,
+.decimal:hover {
+    background-color: #818181;
+}
+
+.number:active,
+.decimal:active {
+    background-color: #717171;
+}
+
+.zero {
+    width: 104px;
+}
+
+.operators {
+    max-width: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+    margin-right: 4px;
+}
+
+.operator,
+.clear-button {
+    background-color: #515151;
+    color: #fff;
+}
+
+.operator:hover,
+.clear-button:hover {
+    background-color: #616161;
+}
+
+.operator:active,
+.clear-button:active {
+    background-color: #515151;
+}
+
+.other {
+    max-width: 60px;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.equal-button {
+    height: 122px;
+    border: none;
+    border-radius: 3px;
+    background-color: #c10d4c;
+    color: #fff;
+}
+
+.equal-button {
+    background-color: #d11d5c;
+}
+
+.equal-button:active {
+    background-color: #c10d4c;
+}
