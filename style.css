@@ -13,6 +13,10 @@ body {
     background-color: #eee;
 }
 
+button:hover {
+    cursor: pointer;
+}
+
 .calculator {
     width: 287px;
 }
